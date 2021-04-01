@@ -14,3 +14,4 @@ run_list 'postgresql_setup::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'postgresql_setup', path: '.'
+cookbook 'postgresql', '~> 8.3.0', :supermarket
