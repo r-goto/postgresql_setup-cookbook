@@ -22,7 +22,7 @@ suites:
         - test/integration/default
     attributes:
 
-platforms:
+# platforms:
 #   - name: centos-8
 #     driver:
 #       image: dokken/centos-8
