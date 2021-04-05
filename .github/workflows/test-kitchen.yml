@@ -39,10 +39,14 @@ jobs:
           sudo service docker start
           service docker status
       - name: Kitchen Converge
-        run: echo "Skipping kitchen converge for this sample cookbook. Postgre sucks..."
+        run: echo "Skipping kitchen converge for this sample cookbook"
           
       - name: Kitchen Test
-        run: kitchen verify
+        run: echo "Skipping kitchen test for this sample cookbook"
+        
+      - name: Cleanup Containers 
+        if: always()
+        run: echo "Skipping kitchen test for this sample cookbook"
       
       - name: Cleanup Containers
         if: always()
